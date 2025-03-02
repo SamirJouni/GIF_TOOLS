@@ -1,0 +1,4 @@
+Pillow
+onnxruntime
+rembg
+ttkbootstrap
