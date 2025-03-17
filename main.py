@@ -269,8 +269,9 @@ class GIFProcessorApp:
                         self.status.set(f"Saving PNG frames for {base_name}")
                         for i, frame in enumerate(frames):
                             export_filename = os.path.join(
-                                output_dir, f"{base_name}_frame_{i}.png"
+                                output_dir, f"{base_name}_frame_{i:03d}.png"
                             )
+
                             frame.save(export_filename, "PNG")
 
                     # If background removal is enabled and GIF export is selected, save the processed GIF
